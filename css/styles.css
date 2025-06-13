@@ -1,0 +1,55 @@
+.form-holder {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.navigation {
+    margin: 0 auto;
+    padding-left: 100px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+form {
+    width: 90%;
+    margin: 0 auto;
+}
+
+input {
+    margin-bottom: 20px;
+    width: 300px;
+    height: 40px;
+}
+
+hr {
+    height: 20px;
+    background: #46A358;
+    color: #46A358;
+}
+
+#nav_login {
+    color: #3D3D3D;
+}
+
+#nav_reg {
+    color: #46A358;
+}
+
+#x1 {
+    padding-left: 17px;
+    color: #3D3D3D;
+}
+
+#x2 {
+    padding-left: 110px;
+    color: #3D3D3D;
+}
+
+.links   {
+    width: 300px; 
+    text-align: center; 
+    font-size: 20px; 
+    padding-left: 50px; 
+    color: #727272;
+}
