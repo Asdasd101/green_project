@@ -3,54 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Registration</title>
-    <style>
-      .form-holder {
-      max-width: 400px;
-      margin: 0 auto;
-      padding: 20px;
-      }
-
-      nav a {
-        font-size: 20px;
-      }
-
-      nav {
-        margin: 0 auto;
-        padding-left: 100px;
-      }
-
-      form {
-      width: 90%;
-      margin: 0 auto;
-      }
-
-      input {
-        margin-bottom: 20px;
-        width: 300px;
-        height: 40px;
-      }
-
-      nav {
-        margin-bottom: 20px;
-        font-size: 15px;
-      }
-
-      hr {
-        height: 20px;
-        background: #46A358;
-        color: #46A358;
-      }
-    </style>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <header></header>
     <main>
       <div class="form-holder">
-        <nav>
-          <a href="login.html" style="color: #3D3D3D;">Login</a> |
-          <a href="registration.html" style="color: #46A358;">Register</a>
+        <nav class="navigation">
+          <a href="login.html" id="nav_login">Login</a> |
+          <a href="registration.html" id="nav_reg">Register</a>
         </nav>
-        <p style="padding-left: 17px; color: #3D3D3D;">Enter your email and password to register.</p>
+        <p id="x1">Enter your email and password to register.</p>
         <form action="#">
           <input type="text" placeholder="Username">
           <input type="email" placeholder="Enter your email adress">
@@ -58,12 +22,12 @@
           <input type="password" placeholder="Confirm password">
           <input type="submit" value="Register" style="background-color: #46A358; color: #FFFFFF;">
         </form>
-        <p style="padding-left: 110px; color: #3D3D3D;">Or register with</p>
-        <a href="" style="width: 300px; text-align: center; font-size: 20px; padding-left: 50px; color: #727272;">
+        <p id="x2">Or register with</p>
+        <a href="" class="links">
           <img src="images/google1.svg" alt="">
           <span>Continue with Google</span>
         </a><br>
-        <a href="" style="width: 300px; text-align: center; font-size: 20px; padding-left: 50px; color: #727272;">
+        <a href="" class="links">
           <img src="images/facebook1.svg" alt="">
           <span>Continue with Facebook</span>
         </a>
