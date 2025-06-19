@@ -3,18 +3,36 @@
   <head>
     <meta charset="utf-8">
     <title>Home</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header></header>
-    <main>
-      <div class="form-holder">
-        <nav class="navigation">
-          <a href="login.html" id="nav_login">Login</a> |
-          <a href="registration.html" id="nav_reg">Register</a>
+    <header>
+      <section class="header">
+        <img src="images/logo.svg" class="header__logo">
+        <nav class="header__nav">
+          <a href="index.html">Home</a>
+          <a href="#">Shop</a>
+          <a href="#">Plant Care</a>
+          <a href="#">Blogs</a>
         </nav>
-      </div>
+        <a href="login.html" class="header__login">Login</a>
+      </section>
+      <hr class="home_hr">
+    </header>
+    <main>
+      <section class="visual">
+        <div class="visual__text">
+          <h3>Welcome to Greenshop</h3>
+          <h1>Let's make a better <span class="green_text">planet</span></h1>
+          <p>We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!</p>
+          <a href="#" class="visual_shop">Shop now</a>
+        </div>
+        <div class="visual__img">
+          <img src="images/plant2.png" alt="">
+          <img src="images/plant1.png" alt="">
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>
