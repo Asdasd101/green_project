@@ -128,3 +128,140 @@ input {
     text-decoration: none;
     border-radius: 6px;
 }
+
+.section_float {
+    width: calc(100% - 370px);
+    float: right;
+}
+
+.section_nav {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.section_nav a {
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+.section_nav a:hover {
+    color: #46A358;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.section_nav a:active {
+    color: #46A358;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.section_sort {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.section_select {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.aside_float {
+    height: 370px;
+    float: left;
+}
+
+.aside_text {
+    font-weight: bold;
+}
+
+.aside_menu {
+
+}
+
+.aside_menu li {
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+.aside_menu a {
+    color: #000;
+    text-decoration: none;
+}
+
+.aside_menu a:hover {
+    color: #46A358;
+    font-weight: bold;
+}
+
+.aside_menu a:active {
+    color: #46A358;
+    font-weight: bold;
+}
+
+.clearfix:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.section_product {
+    display: inline-block;
+}
+
+
+@font-face {
+  font-family: "Cera Pro";
+  src: local("Cera Pro"),
+  url("../fonts/CeraPro-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+    font-family: "Cera Pro";
+}
+
+.section_nav_bottom {
+    text-align: right;
+}
+
+.bottom_link {
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    background: #E5E5E5;
+    text-align: center;
+    padding: 8px;
+    color: #3D3D3D;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.bottom_link:active {
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    background: #46A358;
+    text-align: center;
+    padding: 8px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.bottom_link:hover {
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    background: #46A358;
+    text-align: center;
+    padding: 8px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+}
