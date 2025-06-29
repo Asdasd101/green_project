@@ -194,12 +194,10 @@ input {
 }
 
 .sort {
-    display: inline;
     float: right;
 }
 
 .aside_float {
-    height: 370px;
     float: left;
 }
 
