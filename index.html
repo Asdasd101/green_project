@@ -6,21 +6,21 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-  <body>
+  <body class="container">
     <header>
       <div class="header">
         <img src="images/logo.svg" class="header__logo" alt="">
         <nav class="header__nav">
-          <a href="index.html">Home</a>
+          <a href="#">Home</a>
           <a href="#">Shop</a>
           <a href="#">Plant Care</a>
           <a href="#">Blogs</a>
         </nav>
-        <a href="login.html" class="header__login">Login</a>
+        <a href="login.html" class="header__login"><img src="images/login_logo.svg" alt="" class="xx">Login</a>
       </div>
       <hr class="home_hr">
     </header>
-    <main>
+    <main class="clearfix">
       <section class="visual">
         <div class="visual__text">
           <h3>Welcome to Greenshop</h3>
@@ -29,10 +29,53 @@
           <a href="#" class="visual_shop">Shop now</a>
         </div>
         <div class="visual__img">
-          <img src="images/plant2.png" alt="">
-          <img src="images/plant1.png" alt="">
+          <img src="images/img-banner.png" alt="">
         </div>
       </section>
+      <aside class="aside_float">
+        <div>
+          <p class="aside_text">Categories</p>
+          <ul class="aside_menu">
+            <li class="aside_list"><a href="#">House Plants</a></li>
+            <li class="aside_list"><a href="#">Potter Plants</a></li>
+            <li class="aside_list"><a href="#">Seeds</a></li>
+            <li class="aside_list"><a href="#">Small Plants</a></li>
+            <li class="aside_list"><a href="#">Big Plants</a></li>
+            <li class="aside_list"><a href="#">Succulents</a></li>
+            <li class="aside_list"><a href="#">Trerrariums</a></li>
+            <li class="aside_list"><a href="#">Gardening</a></li>
+            <li class="aside_list"><a href="#">Accessories</a></li>
+          </ul>
+          <img src="images/banner.png" alt="">
+        </div>
+      </aside>
+      <div class="section_float">
+        <div>
+          <nav class="section_nav">
+            <a href="#">All Plants</a>
+            <a href="#">New Arrivals</a>
+            <a href="#">Sale</a>
+          </nav>
+          <div class="sort">
+            <p class="section_sort">Sort by:</p>
+            <select class="section_select">
+              <option>Default sorting</option>
+            </select>
+          </div>
+        </div>
+        <div class="section_product">
+          <img src="images/plant_1.png" alt="">
+          <p>Barberton Daisy</p>
+          <p class="green_text">$119.00</p>
+        </div>
+        <nav class="section_nav_bottom">
+          <a href="#" class="bottom_link">1</a>
+          <a href="#" class="bottom_link">2</a>
+          <a href="#" class="bottom_link">3</a>
+          <a href="#" class="bottom_link">4</a>
+          <a href="#" class="bottom_link_arrow"><img src="images/arrow_right.svg" alt=""></a>
+        </nav>            
+      </div>
     </main>
     <footer></footer>
   </body>

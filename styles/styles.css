@@ -95,6 +95,12 @@ input {
     text-decoration: none;
 }
 
+.header__nav a:hover {
+    color: #46A358;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 .header__login {
     font-size: 16px;
     display: inline-block;
@@ -106,6 +112,17 @@ input {
     color: #fff;
     text-decoration: none;
     border-radius: 6px;
+    
+}
+
+.xx {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header__login:hover {
+    background: #E5E5E5;
+    color: #3D3D3D;
 }
 
 .green_text {
@@ -127,6 +144,11 @@ input {
     color: #fff;
     text-decoration: none;
     border-radius: 6px;
+}
+
+.visual_shop:hover {
+    background: #E5E5E5;
+    color: #3D3D3D;
 }
 
 .section_float {
@@ -159,7 +181,7 @@ input {
 }
 
 .section_sort {
-    display: inline-block;
+    display: inline;
     vertical-align: middle;
 }
 
@@ -167,6 +189,13 @@ input {
     display: inline-block;
     vertical-align: middle;
     text-align: center;
+    background: none;
+    border: none;
+}
+
+.sort {
+    display: inline;
+    float: right;
 }
 
 .aside_float {
@@ -210,6 +239,7 @@ input {
 
 .section_product {
     display: inline-block;
+    width: 33%;
 }
 
 
@@ -242,6 +272,18 @@ body {
     border-radius: 6px;
 }
 
+.bottom_link_arrow {
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    background: #E5E5E5;
+    text-align: center;
+    padding: 5px;
+    color: #3D3D3D;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
 .bottom_link:active {
     font-size: 16px;
     display: inline-block;
@@ -254,6 +296,19 @@ body {
     border-radius: 6px;
 }
 
+.bottom_link_arrow:active {
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    background: #46A358;
+    text-align: center;
+    padding: 8px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+
 .bottom_link:hover {
     font-size: 16px;
     display: inline-block;
@@ -264,4 +319,22 @@ body {
     color: #fff;
     text-decoration: none;
     border-radius: 6px;
+}
+
+.bottom_link_arrow:hover {
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    background: #46A358;
+    text-align: center;
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
