@@ -63,7 +63,6 @@ input {
     display: inline-block;
     vertical-align: middle;
     font-size: 20px;
-    padding-right: 10%;
 }
 
 .visual__img {
@@ -101,6 +100,10 @@ input {
     text-decoration: underline;
 }
 
+.header__nav a.active {
+    font-weight: 700;
+}
+
 .header__login {
     font-size: 16px;
     display: inline-block;
@@ -112,10 +115,10 @@ input {
     color: #fff;
     text-decoration: none;
     border-radius: 6px;
-    
+    font-weight: 500;
 }
 
-.xx {
+.login_logo {
     display: inline-block;
     vertical-align: middle;
 }
@@ -126,7 +129,27 @@ input {
 }
 
 .green_text {
-    color:#46A358
+    color:#46A358;
+}
+
+.main_text {
+    font-size: 70px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.welcome_text {
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.description {
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 20px;
+    color: #727272;
 }
 
 .home_hr {
@@ -140,10 +163,12 @@ input {
     width: 100px;
     background: #46A358;
     text-align: center;
-    padding: 8px;
+    padding: 6px;
     color: #fff;
     text-decoration: none;
     border-radius: 6px;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .visual_shop:hover {
@@ -158,8 +183,9 @@ input {
 
 .section_nav {
     display: inline-block;
-    vertical-align: middle;
     text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 .section_nav a {
@@ -183,6 +209,7 @@ input {
 .section_sort {
     display: inline;
     vertical-align: middle;
+    font-weight: 400;
 }
 
 .section_select {
@@ -202,7 +229,8 @@ input {
 }
 
 .aside_text {
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 18px;
 }
 
 .aside_menu {
@@ -250,6 +278,24 @@ input {
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Cera Pro";
+  src: local("Cera Pro Bold"),
+  url("../fonts/CeraPro-Bold.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: local("Cera Pro Medium"),
+  url("../fonts/CeraPro-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
     font-family: "Cera Pro";
 }
@@ -268,6 +314,7 @@ body {
     color: #3D3D3D;
     text-decoration: none;
     border-radius: 6px;
+    font-weight: 700;
 }
 
 .bottom_link_arrow {
@@ -335,4 +382,38 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.green_text_product {
+    color:#46A358;
+    font-weight: 700;
+    margin: 0;
+}
+
+.text_product {
+    margin: 0;
+    font-weight: 400;
+}
+
+.aside_list {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.aside_list.active a {
+    color: #46A358;
+    font-weight: 700;
+}
+
+.section_nav li {
+    list-style-type: none;
+    margin: 10px 0;
+    display: inline;
+    padding: 5px;
+}
+
+.nav_active a {
+    color: #46A358;
+    font-weight: 700;
+    text-decoration: underline;
 }
