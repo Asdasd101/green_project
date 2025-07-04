@@ -56,6 +56,8 @@ input {
 
 .visual {
     font-size: 0px;
+    display: flex;
+    align-items: center;
 }
 
 .visual__text {
@@ -72,6 +74,8 @@ input {
 
 .header {
     font-size: 0px;
+    display: flex;
+    align-items: center;
 }
 
 .header__logo {
@@ -105,8 +109,7 @@ input {
 
 .header__login {
     font-size: 16px;
-    display: inline-block;
-    vertical-align: middle;
+    display: inline-flex;
     width: 100px;
     background: #46A358;
     text-align: center;
@@ -115,6 +118,8 @@ input {
     text-decoration: none;
     border-radius: 6px;
     font-weight: 500;
+    justify-content: center;
+    align-items: center;
 }
 
 .login_logo {
@@ -178,7 +183,6 @@ input {
 
 .section_float {
     width: calc(100% - 370px);
-    float: right;
 }
 
 .section_nav {
@@ -220,11 +224,11 @@ input {
 }
 
 .sort {
-    float: right;
+    margin-left: auto;
 }
 
 .aside_float {
-    float: left;
+
 }
 
 .aside_text {
@@ -261,11 +265,24 @@ input {
     clear: both;
 }
 
+.clearfix.products {
+    display: flex;
+}
+
+.clearfix.nav {
+    display: flex;
+    align-items: center;
+}
+
 .section_product {
-    display: inline-block;
     width: 33%;
 }
 
+.section_products {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
 @font-face {
   font-family: "Cera Pro";
@@ -408,7 +425,7 @@ body {
 
 
 .container {
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -443,4 +460,108 @@ body {
 .nav_link.active a {
     color: #46A358;
     text-decoration: underline;
+}
+
+.blogs_top {
+    display: flex;
+}
+
+.blog_content_top {
+    display: inline-flex;
+    width: 50%;
+    align-items: center;
+}
+
+.blog_content_top_text {
+    text-align: right;
+}
+
+.blogs_top .main_text {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.blogs_top .description {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.blogs_top .header__login {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.blogs_bottom .green_text {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.blogs_bottom_content {
+    width: 25%;
+    margin: 10px;
+}
+
+.blogs_bottom_content .main_text {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: none;
+    text-align: left;
+}
+
+.blogs_bottom_content .description {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.blogs_bottom_content .header__login {
+    font-size: 14px;
+    font-weight: 500;
+    background: none;
+    color: #3D3D3D;
+    padding: 0px;
+    justify-content: start;
+}
+
+.blogs_bottom_content .header__login:hover {
+    font-size: 14px;
+    font-weight: 500;
+    background: none;
+    color: #46A358;
+    padding: 0px;
+    justify-content: start;
+}
+
+.blogs_bottom_content .header__login:active {
+    font-size: 14px;
+    font-weight: 500;
+    background: none;
+    color: #46A358;
+    padding: 0px;
+    justify-content: start;
+}
+
+.blogs_bottom_content {
+
+}
+
+.blogs_bottom {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.main_text_blog {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.description_blog {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 20px;
+    color: #727272;
 }
