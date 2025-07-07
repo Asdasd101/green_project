@@ -76,6 +76,7 @@ input {
     font-size: 0px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .header__logo {
@@ -86,10 +87,6 @@ input {
 
 .header__nav {
     font-size: 16px;
-    display: inline-block;
-    vertical-align: middle;
-    width: calc(100% - 250px);
-    text-align: center;
 }
 
 .header__nav a {
@@ -120,11 +117,6 @@ input {
     font-weight: 500;
     justify-content: center;
     align-items: center;
-}
-
-.login_logo {
-    display: inline-block;
-    vertical-align: middle;
 }
 
 .header__login:hover {
@@ -267,6 +259,7 @@ input {
 
 .clearfix.products {
     display: flex;
+    margin-bottom: 80px;
 }
 
 .clearfix.nav {
@@ -426,8 +419,10 @@ body {
 
 .container {
     max-width: 1500px;
-    margin: 0 auto;
-    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
 }
 
 .green_text_product {
@@ -474,23 +469,35 @@ body {
 
 .blog_content_top_text {
     text-align: right;
+    width: 50%;
 }
 
 .blogs_top .main_text {
     font-size: 18px;
-    font-weight: 900;
 }
 
-.blogs_top .description {
-    font-size: 14px;
-    font-weight: 400;
-}
-
-.blogs_top .header__login {
-    font-size: 14px;
+.blogs_top_button {
+    font-size: 12px;
     font-weight: 500;
+    display: inline-flex;
+    background: #46A358;
+    text-align: center;
+    padding: 8px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    text-wrap: nowrap;
 }
 
+.blogs_top_button:hover {
+    background: #06a123;
+}
+
+.blogs_top_button:active {
+    background: #06a123;
+}
 
 .blogs_bottom .green_text {
     font-size: 14px;
@@ -515,16 +522,23 @@ body {
     text-align: left;
 }
 
-.blogs_bottom_content .header__login {
+.blogs_bottom_content_button {
     font-size: 14px;
     font-weight: 500;
     background: none;
     color: #3D3D3D;
     padding: 0px;
+    display: inline-flex;
     justify-content: start;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    align-items: center;
+    text-wrap: nowrap;
 }
 
-.blogs_bottom_content .header__login:hover {
+.blogs_bottom_content_button:hover {
     font-size: 14px;
     font-weight: 500;
     background: none;
@@ -533,7 +547,7 @@ body {
     justify-content: start;
 }
 
-.blogs_bottom_content .header__login:active {
+.blogs_bottom_button:active {
     font-size: 14px;
     font-weight: 500;
     background: none;
@@ -546,9 +560,8 @@ body {
 
 }
 
-.blogs_bottom {
+.blogs_bottom_flex {
     display: flex;
-    flex-wrap: nowrap;
 }
 
 .main_text_blog {
@@ -564,4 +577,8 @@ body {
     margin: 0;
     margin-bottom: 20px;
     color: #727272;
+}
+
+.blog_content_top img {
+    width: 50%;
 }
