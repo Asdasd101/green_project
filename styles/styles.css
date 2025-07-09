@@ -561,7 +561,7 @@ body {
     text-align: left;
 }
 
-.blogs_bottom_content_button {
+.btn_arrow {
     font-size: 14px;
     font-weight: 500;
     background: none;
@@ -577,7 +577,7 @@ body {
     text-wrap: nowrap;
 }
 
-.blogs_bottom_content_button:hover {
+.btn_arrow:hover {
     font-size: 14px;
     font-weight: 500;
     background: none;
@@ -586,7 +586,7 @@ body {
     justify-content: start;
 }
 
-.blogs_bottom_button:active {
+.btn_arrow:active {
     font-size: 14px;
     font-weight: 500;
     background: none;
