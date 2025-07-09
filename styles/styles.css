@@ -269,12 +269,53 @@ input {
 
 .section_product {
     width: 33%;
+    position: relative;
+}
+
+.section_product:hover .cards_link {
+    display: flex;
+}
+
+.section_product:hover {
+    border-top: 1px solid #46A358;
+}
+
+.cards_link {
+    position: absolute;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 90px;
+    bottom: 25px;
+    display: none;
+}
+
+.cards_link li {
+    margin: 0 15px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
 }
 
 .section_products {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+}
+
+.discount {
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+    background: #06a123;
+    padding: 6px;
+    display: none;
+}
+
+.section_product:hover .discount {
+    display: flex;
 }
 
 @font-face {
