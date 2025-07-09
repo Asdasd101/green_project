@@ -269,6 +269,7 @@ input {
 
 .section_product {
     width: 33%;
+    position: relative;
 }
 
 .section_products {
