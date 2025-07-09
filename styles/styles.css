@@ -460,10 +460,8 @@ body {
 
 .container {
     max-width: 1500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .green_text_product {
