@@ -311,10 +311,6 @@ input {
     color: white;
     background: #06a123;
     padding: 6px;
-    display: none;
-}
-
-.section_product:hover .discount {
     display: flex;
 }
 
