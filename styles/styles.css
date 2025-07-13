@@ -274,6 +274,7 @@ input {
 
 .section_product:hover .cards_link {
     display: flex;
+    justify-content: center;
 }
 
 .section_product:hover {
@@ -286,9 +287,10 @@ input {
     justify-content: center;
     align-items: center;
     left: 0;
-    right: 90px;
+    right: 0;
     bottom: 25px;
     display: none;
+    padding: 0;
 }
 
 .cards_link li {
