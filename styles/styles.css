@@ -225,9 +225,7 @@ input {
 }
 
 .description {
-    font-size: 14px;
-    margin: 0;
-    margin-bottom: 20px;
+    margin: 0 0 20px;
     color: #727272;
 }
 
@@ -436,6 +434,7 @@ input {
 
 body {
     font-family: "Cera Pro";
+    font-size: 14px;
 }
 
 .section_nav_bottom {
@@ -703,30 +702,51 @@ body {
 
 .bottom_first {
     display: flex;
+    margin-top: 80px;
 }
 
 .bottom_first_section {
-    display: inline-flex;
-    flex-direction: column;
     width: 25%;
     border-right: 1px solid #46A3581A;
     margin-right: 25px;
     padding-right: 20px;
+    background-repeat: no-repeat;
 }
 
-.bottom_picture {
-    height: 40%;
-    width: 40%;
+.bottom_first_section:nth-child(3) {
+    border-right: none;
+}
+
+.bottom_first_section:nth-child(4) {
+    border-right: none;
+}
+
+.bottom_first_section:nth-child(1) {
+    background-image: url(../images/bottom_picture_1.svg);
+}
+
+.bottom_first_section:nth-child(2) {
+    background-image: url(../images/bottom_picture_2.svg);
+}
+
+.bottom_first_section:nth-child(3) {
+    background-image: url(../images/bottom_picture_3.svg);
+}
+
+.bottom_first_section:last-child h3 {
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .bottom_title {
-    font-weight: 700;
     font-size: 17px;
+    padding-top: 90px;
 }
 
 .bottom_second {
     display: flex;
     background: linear-gradient(to right, #EDF6EF, #52C368);
+    height: 88px;
 }
 
 .bottom_second_section {
@@ -735,6 +755,15 @@ body {
     align-items: center;
     justify-content: end;
     margin-right: 20px;
+}
+
+.bottom_second_section a {
+    color: #000;
+    text-decoration: none;
+}
+
+.bottom_second_section address {
+    font-style: normal;
 }
 
 .bottom_second_section:first-child {
@@ -753,9 +782,21 @@ body {
 }
 
 .bottom_third_section {
-    display: inline-flex;
-    flex-direction: column;
     width: 25%;
+}
+
+.bottom_third_section h3 {
+    margin-top: 0;
+    padding-top: 30px;
+}
+
+.bottom_third_section a {
+    color: #000;
+    text-decoration: none;
+}
+
+.bottom_third_section a:hover {
+    color: #46A358;
 }
 
 .bottom_list {
@@ -777,7 +818,6 @@ body {
 
 .submit_form {
     display: flex;
-    width: 354px;
     height: 40px;
     margin-bottom: 17px;
 }
@@ -785,8 +825,6 @@ body {
 .submit_input {
     padding: 0;
     border: 0;
-    font-size: 14px;
-    font-weight: 400;
     color: #ACACAC;
 }
 
