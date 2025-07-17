@@ -104,6 +104,11 @@ input {
 
 .nav_list>li {
     position: relative;
+    transition: 0.2s;
+}
+
+.nav_list > li:hover {
+    transform: scale(1.1);
 }
 
 .nav_list > li:hover > a {
@@ -199,11 +204,13 @@ input {
     font-weight: 500;
     justify-content: center;
     align-items: center;
+    transition: 0.2s;
 }
 
 .header__login:hover {
     background: #E5E5E5;
     color: #3D3D3D;
+    transform: scale(1.1) rotate(5deg);
 }
 
 .green_text {
@@ -248,11 +255,13 @@ input {
     border-radius: 6px;
     text-transform: uppercase;
     font-weight: 700;
+    transition: 0.2s;
 }
 
 .visual_shop:hover {
     background: #E5E5E5;
     color: #3D3D3D;
+    transform: scale(1.1) rotate(5deg);
 }
 
 .section_float {
@@ -264,17 +273,20 @@ input {
     text-align: center;
     padding: 0;
     margin: 0;
+    transition: 0.2s;
 }
 
 .section_nav a {
     padding: 10px;
     color: #000;
     text-decoration: none;
+    transition: 0.2s;
 }
 
 .section_nav a:hover {
     color: #46A358;
     text-decoration: underline;
+    transform: scale(1.1);
 }
 
 .section_nav a:active {
@@ -317,11 +329,16 @@ input {
 .aside_menu li {
     list-style-type: none;
     margin: 10px 0;
+    transition: 0.2s;
 }
 
 .aside_menu a {
     color: #000;
     text-decoration: none;
+}
+
+.aside_menu li:hover {
+    transform: scale(1.1);
 }
 
 .aside_menu a:hover {
@@ -433,7 +450,6 @@ input {
   font-display: swap;
 }
 
-
 body {
     font-family: "Cera Pro";
 }
@@ -455,6 +471,7 @@ body {
     font-weight: normal;
     height: 35px;
     width: 35px;
+    transition: 0.2s;
 }
 
 .bottom_link_arrow {
@@ -469,6 +486,7 @@ body {
     border-radius: 6px;
     height: 35px;
     width: 35px;
+    transition: 0.2s;
 }
 
 .bottom_link:active {
@@ -497,7 +515,6 @@ body {
     width: 35px;
 }
 
-
 .bottom_link:hover {
     font-size: 18px;
     display: inline-block;
@@ -508,6 +525,7 @@ body {
     color: #fff;
     text-decoration: none;
     border-radius: 6px;
+    transform: scale(1.1);
 }
 
 .bottom_link_arrow:hover {
@@ -522,6 +540,7 @@ body {
     border-radius: 6px;
     height: 35px;
     width: 35px;
+    transform: scale(1.1);
 }
 
 .bottom_link.active {
@@ -535,7 +554,6 @@ body {
     text-decoration: none;
     border-radius: 6px;
 }
-
 
 .container {
     max-width: 1500px;
@@ -607,10 +625,12 @@ body {
     justify-content: center;
     align-items: center;
     text-wrap: nowrap;
+    transition: 0.2s;
 }
 
 .blogs_top_button:hover {
     background: #06a123;
+    transform: scale(1.1) rotate(5deg);
 }
 
 .blogs_top_button:active {
@@ -654,6 +674,7 @@ body {
     border-radius: 6px;
     align-items: center;
     text-wrap: nowrap;
+    transition: 0.2s;
 }
 
 .btn_arrow:hover {
@@ -663,6 +684,7 @@ body {
     color: #46A358;
     padding: 0px;
     justify-content: start;
+    transform: scale(1.1);
 }
 
 .btn_arrow:active {
@@ -805,4 +827,43 @@ body {
     text-align: center;
     font-size: 14px;
     font-weight: 400;
+}
+
+.socials {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.socials li {
+    margin-right: 10px;
+    font-size: 17px;
+    color: rgba(70, 163, 88, 0.6);
+    border: 1px solid rgba(70, 163, 88, 0.6);
+    border-radius: 6px;
+    width: 30px;
+    height: 30px;
+    transition: 0.2s;
+}
+
+.socials i {
+    color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    transition: 0.2s;
+}
+
+.socials li:hover {
+    transform: scale(1.1);
+}
+
+.socials i:hover {
+    color:#1A712A;
+}
+
+.social_icon {
+    fill: #06a123;
 }
