@@ -902,3 +902,61 @@ body {
 .blogs_bottom_content .social-icon-arrow {
     fill: #3D3D3D;
 }
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.loading_point {
+    width: 25px;
+    height: 25px;
+    border-radius: 5%;
+    background: #06a123;
+    position: relative;
+    animation: stretch 0.8s linear infinite alternate both;
+}
+
+.loading_point:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.loading_point:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+@keyframes stretch {
+    0% {
+        transform: scaleY(1);
+        background: #EDF6EF;
+    }
+
+    100% {
+        transform: scaleY(2.5);
+        background: #52C368;
+    }
+}
+
+input[type="checkbox"] {
+    margin-bottom: 0px;
+    height: auto;
+    position: absolute;
+    left: -9999px;
+}
+
+.checkbox_line span:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border: 1px solid #0c0b0b;
+    border-radius: 2px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+}
+
+.checkbox_line input:checked+span::before {
+    content: '\2714';
+}
