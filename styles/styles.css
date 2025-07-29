@@ -98,6 +98,7 @@ input {
     padding: 10px;
     color: #000;
     text-decoration: none;
+    transition: 0.2s;
 }
 
 .nav_list>li {
@@ -197,6 +198,7 @@ input {
     font-weight: 500;
     justify-content: center;
     align-items: center;
+    transition: 0.2s;
 }
 
 .header__login:hover {
@@ -244,6 +246,7 @@ input {
     border-radius: 6px;
     text-transform: uppercase;
     font-weight: 700;
+    transition: 0.2s;
 }
 
 .visual_shop:hover {
@@ -266,6 +269,7 @@ input {
     padding: 10px;
     color: #000;
     text-decoration: none;
+    transition: 0.2s;
 }
 
 .section_nav a:hover {
@@ -318,6 +322,7 @@ input {
 .aside_menu a {
     color: #000;
     text-decoration: none;
+    transition: 0.2s;
 }
 
 .aside_menu a:hover {
@@ -452,6 +457,7 @@ body {
     font-weight: normal;
     height: 35px;
     width: 35px;
+    transition: 0.2s;
 }
 
 .bottom_link_arrow {
@@ -466,6 +472,7 @@ body {
     border-radius: 6px;
     height: 35px;
     width: 35px;
+    transition: 0.2s;
 }
 
 .bottom_link:active {
@@ -478,6 +485,7 @@ body {
     color: #fff;
     text-decoration: none;
     border-radius: 6px;
+    transform: scale(1.05);
 }
 
 .bottom_link_arrow:active {
@@ -492,6 +500,7 @@ body {
     border-radius: 6px;
     height: 35px;
     width: 35px;
+    transform: scale(1.05);
 }
 
 
@@ -505,6 +514,7 @@ body {
     color: #fff;
     text-decoration: none;
     border-radius: 6px;
+    transform: scale(1.05);
 }
 
 .bottom_link_arrow:hover {
@@ -519,6 +529,7 @@ body {
     border-radius: 6px;
     height: 35px;
     width: 35px;
+    transform: scale(1.05);
 }
 
 .bottom_link.active {
@@ -531,6 +542,7 @@ body {
     color: #fff;
     text-decoration: none;
     border-radius: 6px;
+    transform: scale(1.05);
 }
 
 
@@ -604,6 +616,7 @@ body {
     justify-content: center;
     align-items: center;
     text-wrap: nowrap;
+    transition: 0.2s;
 }
 
 .blogs_top_button:hover {
@@ -651,6 +664,7 @@ body {
     border-radius: 6px;
     align-items: center;
     text-wrap: nowrap;
+    transition: 0.2s;
 }
 
 .btn_arrow:hover {
@@ -810,6 +824,10 @@ body {
     margin: 10px 0;
 }
 
+.bottom_list a {
+    transition: 0.2s;
+}
+
 .bottom_icons {
     height: 15%;
     width: 70%;
@@ -843,4 +861,102 @@ body {
     text-align: center;
     font-size: 14px;
     font-weight: 400;
+}
+
+.socials {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.socials li {
+    margin-right: 10px;
+    font-size: 17px;
+    color: rgba(70, 163, 88, 0.6);
+    border: 1px solid rgba(70, 163, 88, 0.6);
+    border-radius: 6px;
+    width: 30px;
+    height: 30px;
+    transition: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials li:hover {
+    transform: scale(1.1);
+}
+
+.social-icon {
+    fill: #06a123;
+}
+
+.social-icon-login {
+    fill: #FFFFFF;
+}
+
+.blog_content_top_text .social-icon-arrow {
+    fill: #FFFFFF;
+}
+
+.blogs_bottom_content .social-icon-arrow {
+    fill: #3D3D3D;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.loading_point {
+    width: 25px;
+    height: 25px;
+    border-radius: 5%;
+    background: #06a123;
+    position: relative;
+    animation: stretch 0.8s linear infinite alternate both;
+}
+
+.loading_point:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.loading_point:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+@keyframes stretch {
+    0% {
+        transform: scaleY(1);
+        background: #EDF6EF;
+    }
+
+    100% {
+        transform: scaleY(2.5);
+        background: #52C368;
+    }
+}
+
+input[type="checkbox"] {
+    margin-bottom: 0px;
+    height: auto;
+    position: absolute;
+    left: -9999px;
+}
+
+.checkbox_line span:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border: 1px solid #0c0b0b;
+    border-radius: 2px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+}
+
+.checkbox_line input:checked+span::before {
+    content: '\2714';
 }
