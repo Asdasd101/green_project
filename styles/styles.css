@@ -966,12 +966,6 @@ input[type="checkbox"] {
     display: none;
 }
 
-@media screen and (max-width: 1024px) {
-    .container {
-        padding: 0 30px;
-    }
-}
-
 @media screen and (max-width: 768px) {
     .nav_list {
         display: none;
@@ -1054,7 +1048,23 @@ input[type="checkbox"] {
     }
 
     .blogs_bottom_content {
-        width: 45%;
+        width: 47%;
         margin: 5px;
+    }
+
+    .bottom_first {
+        flex-wrap: wrap;
+    }
+
+    .bottom_first_section {
+        width: 44%;
+    }
+
+    .bottom_third {
+        flex-wrap: wrap;
+    }
+
+    .bottom_third_section {
+        width: 50%;
     }
 }
